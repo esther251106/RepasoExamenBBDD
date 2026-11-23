@@ -1,0 +1,2 @@
+## Conexion
+Primero vamos a crear un archivo llamado `Conexion.php` o `db.php` en este archivo vamos a conectarnos con el sistema gestor de base de datos que en este caso es mysql. Como vimos en temas anteriores.

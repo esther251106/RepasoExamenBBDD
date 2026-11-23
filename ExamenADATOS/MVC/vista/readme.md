@@ -1,0 +1,2 @@
+## Vista
+Es la interfaz de usuario (HTML + PHP mínimo). Solo se encarga de mostrar el formulario (que apunta a action="index.php") y recorrer con un foreach el array $videojuegos que preparó el controlador. Usa htmlspecialchars() por seguridad al imprimir datos.   

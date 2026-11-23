@@ -1,5 +1,6 @@
 <?php
     require_once "conexion.inc.php";
+    
 
     try {
         $sql = "UPDATE videojuegos SET titulo = :titulo WHERE id = :id";
