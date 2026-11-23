@@ -1,0 +1,166 @@
+/* Variables de color para cambiar el tema rápido si quieres */
+:root {
+    --bg-body: #f4f6f9;
+    --bg-card: #ffffff;
+    --primary: #3498db;
+    --primary-hover: #2980b9;
+    --text-main: #2c3e50;
+    --text-muted: #6c757d;
+    --border-color: #dce1e7;
+    --success-bg: #e8f4fd;
+    --error-bg: #fdecea;
+    --error-border: #e74c3c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Tarjeta principal */
+.contenedor {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+/* Tipografía */
+h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: var(--text-main);
+    border-bottom: 2px solid var(--bg-body);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+    color: var(--primary);
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: var(--text-muted);
+}
+
+/* Formularios (para ejercicios con $_POST y $_GET) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    display: block;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+button, input[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Cajas de resultados y alertas */
+.resultado {
+    background-color: var(--success-bg);
+    border-left: 5px solid var(--primary);
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.error {
+    background-color: var(--error-bg);
+    border-left: 5px solid var(--error-border);
+    color: #c0392b;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+/* Tablas (para imprimir arrays asociativos o matrices) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--bg-body);
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f9fbfd;
+}
+
+/* Listas y bloques de código */
+ul, ol {
+    margin: 15px 0 15px 25px;
+    line-height: 1.6;
+}
+
+pre {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 15px 0;
+    font-family: monospace;
+}
