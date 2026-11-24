@@ -1,4 +1,5 @@
 <?php
+// intermediario entre vista y modelo (pide datos al modelo y lo devuelve a la vista)
 require_once "../MVC/modelos/VideojuegoModel.php";
 
 class VideojuegoController {
